@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131318;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 360px;
+    background-color: #1C1C1E;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #131318;
+}
+
+
+.user-id {
+    font-size: 20px;
+    color: #6B6B6B;
+}
+
+
+.header h1 {
+    font-size: 18px;
+}
+
+.user-icon {
+    font-size: 24px;
+}
+
+.profile {
+
+    padding: 20px;
+    background-color: #1C1C1E;
+}
+
+#profile-img {
+    width: 15%;
+    height: 50%;
+    border-radius: 10px;
+
+}
+
+.profile h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+.member-info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.buttons {
+    margin: 20px 0;
+}
+
+.buttons .btn {
+    background-color: #6F5FE7;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.buttons .btn.active {
+    background-color: #FFFFFF;
+    color: #6F5FE7;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #2C2C2E;
+}
+
+.stat {
+    text-align: center;
+}
+
+.delivery-info {
+    background-color: #1C1C1E;
+    padding: 20px;
+    text-align: center;
+}
+
+.campaigns {
+    background-color: #1C1C1E;
+    padding: 20px;
+}
+
+.campaigns h3 {
+    margin: 0 0 10px 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.tabs .tab {
+    background-color: #6F5FE7;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tabs .tab.active {
+    background-color: #FFFFFF;
+    color: #6F5FE7;
+}
+
+.campaign-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.campaign {
+    display: flex;
+    background-color: #2C2C2E;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.campaign img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.campaign-info {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.campaign-info h4 {
+    margin: 0;
+    font-size: 16px;
+}

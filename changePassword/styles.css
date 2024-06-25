@@ -1,0 +1,193 @@
+:root {
+    --primary-color: #6F5FE7;
+    --secondary-color: #FFFFFF;
+    --action-color: #6F5FE7;
+    --grey-color: #D0D0D0;
+    --black-color: #131318;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #131318;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 360px;
+    background-color: #1C1C1E;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+}
+
+.form-container {
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.form-container p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #D0D0D0;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #D0D0D0;
+    border-radius: 5px;
+    background-color: #131318;
+    color: #FFFFFF;
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #D0D0D0;
+    pointer-events: none;
+    transition: all 0.2s;
+}
+
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label {
+    top: -7px;
+    left: 10px;
+    font-size: 12px;
+    color: #6F5FE7;
+}
+
+.btn {
+    background-color: #6F5FE7;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.btnPopup {
+    background-color: transparent;
+    border: none;
+    color: #6c63ff;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    cursor: pointer;
+}
+
+
+#pop-up {
+    width: 375px;
+    height: 0px;
+    background-color: #D0D0D0;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 20px 20px 0px 0px;
+
+
+}
+
+#pop-up h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: var(--black-color);
+    text-align: center;
+
+}
+
+#pop-up p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: var(--black-color);
+    text-align: center;
+
+}
+
+#pop-up .email {
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: var(--black-color);
+    text-align: center;
+    transform: translateY(50%);
+}
+
+#pop-up .instruction {
+    font-size: 14px;
+    color: var(--black-color);
+    position: relative;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+.popup-animation {
+    animation: pop-up 1s;
+}
+
+@keyframes pop-up {
+    0% {
+        display: block;
+
+
+    }
+
+    1% {
+        height: 0px;
+    }
+
+    100% {
+        height: 350px;
+    }
+}
+
+@keyframes pop-upLower {
+    0% {
+        height: 350px;
+    }
+
+    99% {
+        height: 0px;
+    }
+
+    100% {
+        display: none;
+    }
+}
